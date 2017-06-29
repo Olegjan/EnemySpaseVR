@@ -7,12 +7,10 @@ public class MoveBulletObjectScript : MonoBehaviour {
 	public float BulletSpeed; //Скорость с которой снаряд двигаеться к Астероиду
 	public GameObject MainAnimationScriptObject; // Объект на котором весит Основной скрипт для утановки видимости и позиций объектов
 
-
 	void Start () {
 	}
 
 	void Update () {
-		//transform.Translate (transform.forward * Time.deltaTime * BulletSpeed);
 		//если между Снарядом и Астероидом будет такое растояние,то оба эти объекта будут уничтожены 
 		if (Vector3.Distance(transform.position, PlaceAsteroidButton.position) < 0.5f) { 
 			MainAnimationScriptObject.SetActive (true);
