@@ -32,10 +32,6 @@ public class TestNewOB : MonoBehaviour {
 		if (LifeTimer !=null){
 		MainAnimationScriptObject.SetActive (false); // с помощью этой строки деактивируеться объект скрипта и сам этот скрипт
 		}
-		//if (LifeTimer =null){
-		//	yield return new WaitForSeconds (0.2f);
-		//	MainAnimationScriptObject.SetActive (false); // с помощью этой строки деактивируеться объект скрипта и сам этот скрипт
-		//}
 		yield return new WaitForSeconds (0.2f);
 		Debug.Log ("Stop my test");
 	}
