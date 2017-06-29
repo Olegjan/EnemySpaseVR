@@ -2,7 +2,6 @@
 using System.Collections;// запускает анимацию слова louding и загружает Следующюю сцену для Выигравшего игрока
 
 public class ActivatorWinerText : MonoBehaviour {
-	//public GameObject Winer;
 	public float ActivatorTime = 160f; // время через которое начнёт выполняться данный скрипт
 	public string sceneName; // иногда здесь можно указать название сцены и мы перейдём к этой сцене
 	public GameObject FadeInScene; // Объект который создаёт затемнение в сцене перед переходом в другую сцену
@@ -10,7 +9,6 @@ public class ActivatorWinerText : MonoBehaviour {
 
 	void Start () {
 		StartCoroutine ("TestTimer");//функция запускающяя таймер
-		//gameObject.SetActiveRecursively (true); //Рекурсивная активация всей групы дочерних объектов
 	}
 
 	IEnumerator TestTimer(){
