@@ -19,7 +19,6 @@ public class DestroyPanel_Button : MonoBehaviour {
 			SphereBullet.SetActive (true);
 		}
 	}
-	
 	void Update () {
 		transform.Rotate (0, 0, RotateSpeed); 
 		if (Vector3.Distance(transform.position, new Vector3(0, 0, 0)) < 0.2f) {
